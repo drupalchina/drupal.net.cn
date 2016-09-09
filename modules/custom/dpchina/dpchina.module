@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Module file for dpchina.
+ */
+
+ /**
+  * Implements hook_theme().
+  */
+ function dpchina_theme() {
+   return array(
+     'fronttopblock' => array(
+       'variables' => array('img' => null, 'title' => null, 'description' => null),
+       'template' => 'front-top-block',
+     ),
+     'aboutusblock' => array(
+      //  'variables' => array('img' => null, 'title' => null, 'description' => null),
+       'template' => 'about-us-block',
+     ),
+   );
+ }

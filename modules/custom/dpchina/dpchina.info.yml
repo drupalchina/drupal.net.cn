@@ -1,0 +1,11 @@
+name: Drupal China
+type: module
+description: Drupal China.
+package: Drupal China
+# core: 8.x
+dependencies:
+  - block
+
+version: '8.x-1.0'
+core: '8.x'
+project: 'dpchina'
