@@ -1,0 +1,33 @@
+.featured-top{
+    padding-top: 0;
+    padding-left:0;
+    padding-right:0;
+}
+.featured-top .content{
+    margin:0;
+}
+#header{
+    background: none;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+.path-user #header{
+    position: relative;
+    background-color: #111423;
+}
+/*.region-header{
+    padding-top: 0;
+}
+.region-header .block{
+    margin-top: 0;
+}*/
+.region-header .block li{
+    display: inline-block;
+}
+.region-header .block-menu{
+    border: none;
+}
+.region-header .block-menu li a{
+    border-bottom: none;
+}
