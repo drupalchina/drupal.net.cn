@@ -37,3 +37,22 @@ body.path-frontpage{
 .block-dpchina-front-top {
 	text-align: center;
 }
+
+
+#block-drupalcn-dpchinafronttop{
+	height: 900px;
+}
+footer,#footer{
+	background: #222;
+}
+.footer-top,.footer-top a{
+	color: #fff;
+}
+.footer-top a:hover,
+.footer a{
+	color: #0081B7;
+}
+.footer {
+	border-top: none;
+	color: #898681;
+}

@@ -159,9 +159,9 @@
           </div>
         {% endif %}
 
-        {% if page.activity %}
-          <div id="activity">
-            {{ page.activity }}
+        {% if page.community_activity %}
+          <div id="community-activity">
+            {{ page.community_activity }}
           </div>
         {% endif %}
 
@@ -178,10 +178,12 @@
         {% endif %}
 
         {# Content #}
-        {% block content %}
-          <a id="main-content"></a>
-          {{ page.content }}
-        {% endblock %}
+        {#
+          {% block content %}
+            <a id="main-content"></a>
+            {{ page.content }}
+          {% endblock %}
+        #}
       </section>
 
       {# Sidebar Second #}
@@ -196,8 +198,9 @@
   </div>
 {% endblock %}
 
+<footer id="footer">
 {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
-  <div class="container footer-top clearfix">
+  <div class="footer-top  {{ container }}" role="contentinfo">
     <div class="row">
       <div class="col-sm-3">{{ page.footer_first }}</div>
       <div class="col-sm-3">{{ page.footer_second }}</div>
@@ -209,8 +212,9 @@
 
 {% if page.footer %}
   {% block footer %}
-    <footer class="footer {{ container }}" role="contentinfo">
+    <div class="footer {{ container }}" role="contentinfo">
       {{ page.footer }}
-    </footer>
+    </div>
   {% endblock %}
 {% endif %}
+</footer>
